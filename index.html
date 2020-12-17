@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrClan</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cutive Mono', monospace;
+            /* font-size: 12px; */
+            background-color: #262835;
+            /*#181818;*/
+            color: #BCB7B2;
+        }
+
+        .msg {
+            color: #828280;
+        }
+
+        .highlight {
+            color: #00BF00;
+        }
+
+        .command {
+            color: #f2f7fa;
+        }
+
+        .resume {
+            margin: 0 auto;
+            margin: 48px 0;
+            text-align: center;
+        }
+
+        .info-value {
+            color: #6ACBD8;
+        }
+
+        .info-title {
+            color: #adb6b6;
+        }
+
+        .title {
+            color: #aaf5ff;
+        }
+
+        .position {
+            color: #21f61a;
+        }
+
+        a:active,
+        a:visited,
+        a:hover {
+            color: #aaf5ff;
+            text-decoration: none;
+        }
+
+        blink {
+            -webkit-animation: 2s linear infinite condemned_blink_effect;
+            /* for Safari 4.0 - 8.0 */
+            animation: 2s linear infinite condemned_blink_effect;
+        }
+
+        /* for Safari 4.0 - 8.0 */
+        @-webkit-keyframes condemned_blink_effect {
+            0% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: visible;
+            }
+        }
+
+        @keyframes condemned_blink_effect {
+            0% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: visible;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Initiating session with least access privileges...</p>
+    <p>
+        <span class="highlight">mrclan@github.io:~$</span>
+        <span class="command">session -mode playback -uid !!:$</span>
+    </p>
+    <p>Playing cached session from December 14th, 2020 04:08:12AM</p>
+    <p>
+        <span class="highlight">mrclan@github.io:~$</span>
+        <span class="command">resume -user "mrclan" -mode summary</span>
+    </p>
+    <p>Displaying resume summary...</p>
+    <div class="resume-container">
+        <p>
+            <span class="info-title">Name:</span>
+            <span class="info-value">Pratik Chandra</span>
+        </p>
+        <p>
+            <span class="info-title">Alias:</span>
+            <span class="info-value">MrClan</span>
+        </p>
+        <p>
+            <span class="info-title">Email:</span>
+            <span class="info-value">justmepratik@gmail.com</span>
+        </p>
+        <p>
+            <span class="info-title">Job:</span>
+            <span class="info-value">Software Engineer</span>
+        </p>
+        <p>
+            <span class="info-title">DoB:</span>
+            <span class="info-value">1988-03-10</span>
+        </p>
+        <p>
+            <span class="info-title">Github:</span>
+            <span class="info-value"><a href="https://github.com/mrclan">https://github.com/mrclan</a></span>
+        </p>
+        <p>
+            <span class="info-title">LinkedIn:</span>
+            <span class="info-value"><a
+                    href="http://np.linkedin.com/in/pratikchandra/">http://np.linkedin.com/in/pratikchandra</a></span>
+        </p>
+        <p>
+            <span class="info-title">Loves working with:</span>
+            <span class="info-value">C#, .NET, ASP.NET, Vue.Js, Xamarin, MSSQL, Firebase</span>
+        </p>
+        <p>
+            <span class="info-title">Can also work with:</span>
+            <span class="info-value">Node.Js, ReactJs, Angular, Postgres</span>
+        </p>
+        <p>
+            <span class="info-title">Past Experiences:</span>
+        <ul>
+            <li>
+                <span class="title">Food Delivery Ecosystem (2020)</span> - <span class="position">LEAD DEVELOPER</span>
+                <p><a href="https://youtu.be/3Y-OwmQI81o">Mobile App demo</a></p>
+                <p>A complete food delivery ecosystem, with mobile apps for customers and web portals for outlets, and
+                    an admin dashboard for super admin.
+                </p>
+                <p>A real-time collaboration tool with zero human interaction required for communication between
+                    end-users and outlets.
+
+                    I, as the system architect for this system designed the core architecture, chose the implementation
+                    stack and then worked with 2 other devs to bring this project to realization.
+                    I was also responsible for code-reviews of fellow devs also paired up with the DevOps team for
+                    automated deployment of various interconnected components, which included 3 web portals (Vue.Js
+                    SPAs), 4 mobile apps (2 each for clients and outlets for android and iOS platforms), a Notification
+                    hub based on firebase and the backend database(MSSQL).
+                </p>
+            </li>
+            <li>
+                <span class="title">IoT Interfacing cross platform mobile app</span> - <span class="position">PRINCIPAL
+                    ENGINEER - XAMARIN</span>
+                <p><a href="https://www.niko.eu/en/products/niko-home-control/software-and-apps">NHC apps</a></p>
+                <p>The purpose of the application was to control the connected home appliances like light bulbs, doors,
+                    window-blinds, thermostats, etc.
+                    The intermediary proprietary hardware developed by Niko, called CoCo(ConnectedController) handled
+                    the data channeling to-and-from all connected devices.
+                    The developed mobile app communicated directly with CoCo via MQTT protocol.
+                    This app was built with the Xamarin framework so that it could be deployed on both Android as well
+                    as, iOS platforms.
+                    The application was developed from scratch by my team, of which I was the lead developer. I
+                    architected the base UI framework to enable code reuse for Xaml based UIs to match the proposed
+                    designs. I also built the core foundation layer of the application to communicate with CoCo via
+                    MQTT, handle multi-language support, etc; on which other devs could build on to add and extend
+                    features.</p>
+            </li>
+            <li>
+                <span class="title">Pancreatic Cancer Action Network (HIPAA compliant)</span> - <span
+                    class="position">.NET CONTRACTOR</span>
+                <p><a href="https://www.pancan.org/">PANCAN Home</a></p>
+                <p>PanCAN is a US-based HIPAA compliant web portal for managing medical professionals and their
+                    assignments. As an active member of the team, my role was to add new reports and features within the
+                    allocated time frames.
+                </p>
+            </li>
+            <li>
+                <span class="title">GoQuest LMS</span><br />
+                <span class="title">Fleet Tracking System</span> - <span class="position">SENIOR SOFTWARE
+                    DEVELOPER</span>
+                <p>GoQuest: A digital education management system which also enables online collaboration between
+                    students and teachers.</p>
+                <p>FTS: A real-time vehicle tracking dashboard, for web and android tablets, to enable managers to get a
+                    live view of vehicle locations, stoppages, fuel expenses, and any unexpected trips made by the
+                    drivers for any company buses and trucks.</p>
+            </li>
+            <li>
+                <span class="title">Tzunami Deployer</span> - <span class="position">SOFTWARE ENGINEER .NET</span>
+                <p><a href="https://tzunami.com/">https://tzunami.com/</a></p>
+                <p>Tzunami Deployer is a large scale windows forms application which operates as an ECM migration tool
+                    used to export data from diverse current and legacy ECM systems (Confluence, Lotus Notes,
+                    HummingBird) into Microsoft Sharepoint.
+                    This is an on-going project since 2008, and my role primarily included analyzing and fixing reported
+                    bugs, finding memory leaks and deadlocks, improve installation scripts and preparing for cloud
+                    migration.</p>
+            </li>
+            <li>
+                <span class="title">TuMaths.com</span><br />
+                <span class="title">GRE Talking Dictionary</span><br />
+                <span class="title">TogetherWePlay</span><br />
+                <span class="title">SportsScore Api</span><br />
+                <span class="title">DBMS Lite</span><br /> - <span class="position">SOLO DEVELOPER</span>
+            </li>
+        </ul>
+        </p>
+
+        <p class="resume"><a href="">DOWNLOAD FULL RESUME AS PDF</a></p>
+    </div>
+    <p>Session playback finished.</p>
+    <p>
+        <span class="highlight">mrclan@github.io:~$</span>
+        <blink><span class="command">_</span></blink>
+    </p>
+</body>
+
+</html>
